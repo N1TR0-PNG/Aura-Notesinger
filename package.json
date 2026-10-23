@@ -5,6 +5,7 @@
   "description": "Aura Music + Aura Codex in one page, with Firebase sign-in and Firestore cloud snapshots.",
   "scripts": {
     "start": "npx --yes serve .",
+    "build": "node -e \"require('fs').mkdirSync('dist',{recursive:true});require('fs').copyFileSync('index.html','dist/index.html')\"",
     "deploy": "npx --yes firebase-tools deploy"
   },
   "dependencies": {
